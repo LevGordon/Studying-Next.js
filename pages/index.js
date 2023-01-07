@@ -16,10 +16,10 @@ function Home() {
     <div>
       <h1>Home Page</h1>
       <Link href="/blog">
-        <a> Blog </a>
+        Blog 
       </Link>
       <Link href="/product">
-        <a>Products </a>
+        Products 
       </Link>
       <button onClick={handleClick}>
         Place Order

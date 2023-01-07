@@ -4,26 +4,26 @@ function index( {productId = 100} ) {
   return (
     <div>
       <Link href="/">
-        <a>Home </a>
+        Home
       </Link>
           <h2>
             <Link href="/product/1">
-              <a>product 1</a>
+              product 1
             </Link>
           </h2>
           <h2>
             <Link href="/product/2">
-              <a>product 2</a>
+              product 2
             </Link>
           </h2>
           <h2>
             <Link href="/product/3" replace>   {/* "replace" changes the default behavior of the "back" arrow in the browser */} 
-              <a>product 3</a>
+              product 3
             </Link>
           </h2>
           <h2>
             <Link href={`/product/${productId}`}>
-              <a>product {productId}</a>
+              product {productId}
             </Link>
           </h2>
     </div>

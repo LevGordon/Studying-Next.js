@@ -1,15 +1,12 @@
+import User from "../components/user";
+
 function UserList(props) {
   return (
     <div>
       <h1>List of Users</h1>
       {props.users.map((user) => {
         return (
-            <div key={user.id}>
-                <p>{user.name}</p>
-                <p>{user.username}</p>
-                <p>{user.phone}</p>
-                <p>{user.email}</p>
-            </div>
+           <User user={user}/>
         )
       })}
     </div>
